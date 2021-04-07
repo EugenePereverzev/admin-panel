@@ -1,0 +1,137 @@
+
+* 		{
+        box-sizing: border-box;
+        }
+body    {
+        font-family: "Ubuntu", sans-serif; 
+        margin: 0.5rem;
+        }
+.body   
+        {
+        position: absolute;
+        left: 0.5rem;
+        right: 0.5rem;
+        top: 0.5rem;
+        bottom: 0.5rem;
+        }
+.header
+        {
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        position: static;   
+        }
+.filter-bar
+        {
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0.5rem;
+        }
+.table-wrapper
+        {
+        margin: 0 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        position: relative;
+        /*width: 1080px;
+        height: 320px; */  
+        }
+.table-header
+        {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0.5rem;
+        position: static;
+        width: 100%;
+        /*width: 1080px;
+        height: 48px;
+        left: calc(50% - 1080px/2);
+        top: 0px;*/
+        }
+.table-body
+        {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 2rem;
+        position: static;
+        width: 100%;
+        /*width: 1080px;
+        height: 224px;
+        left: calc(50% - 1080px/2);
+        top: 48px;*/
+        }
+.table-footer 
+        {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0.5rem;
+        position: static;
+        width: 100%;
+        /*height: 48px;
+        left: calc(50% - 1080px/2);
+        top: 272px;*/
+            
+        }
+
+
+
+
+.footer {
+        display: block;
+        margin: 0 0.5rem 0.5rem;
+        }
+.align-left 
+        {
+        float: right;
+        }
+/* typography */        
+.typography-1
+        {
+        font: normal bold 1.5rem/2rem Ubuntu;
+        letter-spacing: -0.2px;
+        }
+.typography-2
+        {
+        font: normal 1rem/1.5rem Ubuntu;
+        letter-spacing: -0.2px;
+        }
+.typography-3
+        {
+        font: x-small Ubuntu;
+        letter-spacing: -0.2px;
+        }
+/* borders and colors */        
+.bordered-blue 
+        {
+        border: 1px dotted blue;
+        }
+
+.border-style-1
+        {
+        border: 2px solid #8055FF;    
+        }
+
+.color-style-1
+        {
+        background-color: #A8A8FF;
+        color: #8055FF;    
+        }
+.color-style-2
+        {
+        background-color: #8055FF;
+        color: #A8A8FF;    
+        }
+.body   {
+        background: white;
+        box-shadow: 0px 32px 128px rgba(0, 0, 0, 0.5), 0px 16px 32px rgba(0, 0, 0, 0.34), 0px 8px 8px rgba(0, 0, 0, 0.25);
+        }
