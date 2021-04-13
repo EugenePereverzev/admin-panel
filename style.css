@@ -1,3 +1,10 @@
+:root   {
+        --cust-color1: #8055FF;
+        --cust-color2: #A8A8FF;
+        --cust-color3: #459DF5;
+        --cust-color4: #BAD8F5;
+        }
+
 html    {
         height: 100%;
         font-family: "Ubuntu", sans-serif; 
@@ -115,18 +122,18 @@ body    {
 
 .border-style-1
         {
-        border: 2px solid #8055FF;    
+        border: 2px solid var(--cust-color1);    
         }
 
 .color-style-1
         {
-        background-color: #A8A8FF;
-        color: #8055FF;    
+        background-color: var(--cust-color2);
+        color: var(--cust-color1);    
         }
 .color-style-2, .main-menu:hover, .tune-menu:hover 
         {
-        background-color: #8055FF;
-        color: #A8A8FF;    
+        background-color: var(--cust-color1);
+        color: var(--cust-color2);    
         }
 
     
