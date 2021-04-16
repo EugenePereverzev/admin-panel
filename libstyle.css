@@ -7,18 +7,30 @@ body {
     background-color: #E5E5E5;
 }
 .header {
-    position: sticky; 
     top: 0;   
 }
-.component {
+
+.lib {
+    flex: 1;
+    overflow: auto;
     margin: 0 0.5rem;
+}
+.footer {
+    margin: 0;
+}
+.component {
+    /* margin: 0 0.5rem; */
     color: var(--cust-color1);
+    border-left: 3px solid #E5E5E5;
 }
 .component-title {
     padding: 0 0.25rem;
 }
 .component:hover {
     border-left: 3px solid var(--cust-color2);
+}
+.component:hover .component-title {
+    background-color: var(--cust-color2);
 }
 
 .main-menu {
@@ -41,7 +53,7 @@ body {
     margin: 0px; 
     list-style-type: none; 
     font-size: small; 
-    width: 20vh; 
+    width: 10rem;
     max-height: 90vh; 
     overflow: auto; 
 }
@@ -103,4 +115,57 @@ body {
 }
 .value-notset {
     background-color: white;
+}
+.grid-collection-3x6 {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px dashed var(--cust-color1);
+    border-radius: 0.25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr .75fr .75fr .75fr;
+    gap: 16px 16px;
+    grid-auto-flow: column;
+}
+
+.iconed-button {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+} 
+.iconed-button .caption {
+    flex: 1;
+    text-align: center;
+}
+.icon-off .icon,
+.text-off .caption{
+    display: none;
+}
+
+.button-medium-size {
+    height: 2rem;
+    width: 7rem;
+    font: normal 400 0.85rem/1rem Ubuntu;
+}
+.button-medium-size + .icon-off {
+    width: 5.5rem;
+}
+.button-medium-size + .text-off {
+    width: 2rem;
+}
+
+.button-small-size {
+    padding: 0.25rem;
+    height: 1.5rem;
+    width: 6rem;
+    font: normal 400 0.85rem/1rem Ubuntu;
+}
+.button-small-size + .icon-off {
+    width: 4.5rem;
+}
+.button-small-size + .text-off {
+    width: 1.5rem;
 }

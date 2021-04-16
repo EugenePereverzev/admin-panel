@@ -1,139 +1,140 @@
-:root   {
+:root {
         --cust-color1: #8055FF;
         --cust-color2: #A8A8FF;
         --cust-color3: #459DF5;
         --cust-color4: #BAD8F5;
-        }
+}
 
-html    {
+html {
         height: 100%;
         font-family: "Ubuntu", sans-serif; 
-        }
-body    {
+}
+body {
         box-sizing: border-box;
         margin: 0;
         height: 100%;
         display: flex;
         flex-direction: column;
-        }
-.header
-        {
+}
+.header {
         margin: 0.5rem 0.5rem 0;
         display: flex;
         padding: 0px;
-        }
-.header-title, .main-menu, .tune-menu
-        {
+}
+.header-title, 
+.main-menu, 
+.tune-menu {
         margin: 0;
         padding: 0 0.5rem;        
-        }
-.header-title
-        {
+}
+.header-title {
         flex: 1;        
-        }        
+}        
 
-.content
-        {
+.content {
         margin: 0 0.5rem;
         display: flex;
         flex-direction: column;        
         flex: 1;
-        }
+}
 
 .footer {
         margin: 0 0.5rem 0.5rem;
         display: flex;
         justify-content: space-between;
-        }
-.footer-item
-        {
+}
+.footer-item {
         margin: 0;
         padding: 0.125rem;        
-        }        
+}        
 
-.filter-bar
-        {
+.filter-bar {
         margin: 0.5rem 0;                 
         padding: 0.5rem;
         display: flex;
         justify-content: space-between;
-        }
-.filter-lev1
-        {
+}
+.filter-lev1 {
         margin: 0;
         display: flex;        
-        }        
-.filter-lev2
-        {
+}        
+.filter-lev2 {
         margin: 0 0.5rem 0 0;
         padding: 0 0.25rem;        
-        }        
+}        
 
-.active-box
-        {
+.active-box {
         padding: 0;        
         height: 2rem;
         width: 2rem;        
-        }
+}
 
-
-
-
-
-.table-wrapper
-        {
+.table-wrapper {
         margin: 0;
         padding: 0px;
         display: flex;
         flex-direction: column;
         flex: 1;
-        }
-.table-header, .table-body, .table-footer 
-        {
+}
+.table-header, 
+.table-body, 
+.table-footer {
         padding: 0.5rem;
-        }
-.table-body
-        {
+}
+.table-body {
         flex: 1;
-        }
+}
 
 
 /* typography */        
-.typography-1
-        {
+.typography-large {
         font: normal bold 1.5rem/2rem Ubuntu;
         letter-spacing: -0.2px;
-        }
-.typography-2
-        {
+}
+.typography-normal {
         font: normal 1rem/1.5rem Ubuntu;
         letter-spacing: -0.2px;
-        }
-.typography-3
-        {
+}
+.typography-x-small {
         font: x-small Ubuntu;
         letter-spacing: -0.2px;
-        }
+}
 /* borders and colors */        
-.bordered-blue 
-        {
+.bordered-blue {
         border: 1px dotted blue;
-        }
+}
 
-.border-style-1
-        {
+.border-style-1 {
         border: 2px solid var(--cust-color1);    
-        }
+}
 
-.color-style-1
-        {
+.color-style-main {
         background-color: var(--cust-color2);
         color: var(--cust-color1);    
-        }
-.color-style-2, .main-menu:hover, .tune-menu:hover 
-        {
+}
+.color-style-main-reverse, 
+.main-menu:hover, 
+.tune-menu:hover {
         background-color: var(--cust-color1);
         color: var(--cust-color2);    
-        }
+}
 
-    
+.color-style-blue {
+        background-color: var(--cust-color3);
+        color: white;    
+}
+
+.color-style-blue-reverse {
+        background-color: inherit;
+        color: var(--cust-color3);    
+}   
+
+.color-style-black {
+        background-color: black;
+        color: white;    
+}
+
+.color-style-black-reverse {
+        background-color: inherit;
+        color: black;    
+} 
